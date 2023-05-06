@@ -47,5 +47,5 @@
 		$lang = 'en';
 	}
 
-	require("lang/".$lang."/index.php");
+	// Require the lang path.
 ?>
