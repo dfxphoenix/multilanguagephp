@@ -33,6 +33,8 @@
 		$data = json_decode($contents, true);
 	}
 
+	$lang = 'en';
+
 	/* foreach($translations as $key => $translation)
 	{
 		if(isset($data['countryCode']))
@@ -50,14 +52,6 @@
 		{
 			$lang = 'ro';
 		}
-		else
-		{
-			$lang = 'en';
-		}
-	}
-	else
-	{
-		$lang = 'en';
 	} */
 
 	// Require the lang path.
