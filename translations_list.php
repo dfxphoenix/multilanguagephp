@@ -1,0 +1,5 @@
+<?php
+	/* $translations = [
+		'RO' => 'ro'
+	]; */
+?>

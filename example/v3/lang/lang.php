@@ -1,5 +1,6 @@
 <?php
-	/* include 'translations_list.php'; */
+	include 'translations_list.php';
+
 	if(isset($_SERVER['HTTP_CLIENT_IP']))
 	{
 		$real_ip_adress = $_SERVER['HTTP_CLIENT_IP'];
@@ -32,7 +33,9 @@
 		$data = json_decode($contents, true);
 	}
 
-	/* foreach($translations as $key => $translation)
+	$lang = "en";
+
+	foreach($translations as $key => $translation)
 	{
 		if(isset($data['countryCode']))
 		{
@@ -41,23 +44,7 @@
 				$lang = $translation;
 			}
 		}
-	} 
-	or
-	if(isset($data['countryCode']))
-	{
-		if($data['countryCode'] == 'RO')
-		{
-			$lang = 'ro';
-		}
-		else
-		{
-			$lang = 'en';
-		}
 	}
-	else
-	{
-		$lang = 'en';
-	} */
 
-	// Require the lang path.
+	require_once 'translations/'.$lang.'.php';
 ?>
