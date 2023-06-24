@@ -33,7 +33,7 @@
 		$data = json_decode($contents, true);
 	}
 
-	$lang = "en";
+	$lang = 'en';
 
 	foreach($translations as $key => $translation)
 	{
