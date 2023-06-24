@@ -31,20 +31,15 @@
 		$data = json_decode($contents, true);
 	}
 
+	$lang = "en";
+
 	if(isset($data['countryCode']))
 	{
 		if($data['countryCode'] == 'RO')
 		{
 			$lang = 'ro';
 		}
-		else
-		{
-			$lang = 'en';
-		}
-	}
-	else
-	{
-		$lang = 'en';
+
 	}
 
 	require_once 'lang_'.$lang.'.php';
