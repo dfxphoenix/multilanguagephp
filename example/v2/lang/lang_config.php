@@ -31,7 +31,7 @@
 		$data = json_decode($contents, true);
 	}
 
-	$lang = "en";
+	$lang = 'en';
 
 	if(isset($data['countryCode']))
 	{
