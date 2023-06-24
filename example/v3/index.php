@@ -1,5 +1,5 @@
 <?php
-	include('lang/lang_config.php');
+	include('lang/lang.php');
 ?>
 <HTML>
 <head>
