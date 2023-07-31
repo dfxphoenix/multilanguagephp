@@ -39,7 +39,10 @@
 		{
 			$lang = 'ro';
 		}
-
+	if($data['countryCode'] == 'MD')
+		{
+			$lang = 'ro';
+		}
 	}
 
 	require_once 'lang_'.$lang.'.php';
