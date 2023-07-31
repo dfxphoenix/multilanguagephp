@@ -39,6 +39,10 @@
 		{
 			$lang = 'ro';
 		}
+		if($data['countryCode'] == 'MD')
+		{
+			$lang = 'ro';
+		}
 	}
 
 	require("lang/".$lang."/index.php");
