@@ -1,5 +1,6 @@
 <?php
 	/* $translations = [
-		'RO' => 'ro'
+		'RO' => 'ro',
+		'MD' => 'ro'
 	]; */
 ?>
