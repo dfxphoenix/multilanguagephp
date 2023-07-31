@@ -52,6 +52,10 @@
 		{
 			$lang = 'ro';
 		}
+		if($data['countryCode'] == 'MD')
+		{
+			$lang = 'ro';
+		}
 	} */
 
 	// Require the lang path.
