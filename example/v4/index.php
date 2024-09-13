@@ -1,7 +1,7 @@
 <?php
-	include 'translations_list.php';
+	include 'lang/translations_list.php';
 	include('lang/lang.php');
-	require_once 'translations/'.$lang.'.php';
+	require_once 'libs/multilanguagephp/translations/'.$lang.'.php';
 ?>
 <HTML>
 <head>
