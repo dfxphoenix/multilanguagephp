@@ -24,7 +24,8 @@
 
 	// Set cURL options for the request
 	curl_setopt($ch, CURLOPT_URL, $url);
-	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 2);
+	curl_setopt($ch, CURLOPT_TIMEOUT, 3);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 
@@ -32,10 +33,15 @@
 	$contents = curl_exec($ch);
 
 	// Check for cURL errors
-	if(curl_errno($ch))
+	$errno = curl_errno($ch);
+
+	if($errno)
 	{
-		error_log(curl_error($ch));
-		$data = '';
+		if($errno != 28)
+		{
+			error_log('cURL #'.$errno.': '.curl_error($ch));
+		}
+		$data = [];
 	}
 	else
 	{
